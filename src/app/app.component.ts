@@ -10,20 +10,16 @@ import { DataService } from './data.service';
 export class AppComponent {
   title = 'MovingTiles';
 
-imagesTop: Object;
-imagesBottom: Object;
+images: Object;
+
 
 constructor(private data: DataService) { }  
 
 ngOnInit() {
-  this.data.getImagesTop().subscribe(data => {
-    this.imagesTop = data    
+  this.data.getImages().subscribe(data => {
+    this.images = data    
     console.log(data)
   })
-  this.data.getImagesBottom().subscribe(data => {
-    this.imagesBottom = data    
-    console.log(data)
-  })
-}
+ }
 
 }

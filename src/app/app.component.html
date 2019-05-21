@@ -1,11 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <h1>Moving Tiles</h1>
+  <br>
+  <p>click on an image</p>
 </div>
-<div class="container flex-container">
-  <div *ngFor="let image of imagesTop.hits" (click)="status=!status" [ngClass]="status ? 'large' : 'small'"  [ngStyle]="{'background-image':'url(' + image.webformatURL + ')'}">        
-  </div>
-  <div *ngFor="let image of imagesBottom.hits" (click)="status=!status" [ngClass]="status ? 'large' : 'small'"  [ngStyle]="{'background-image':'url(' + image.webformatURL + ')'}">      
-  </div>
+<div class="container grid-container">
+  <div *ngFor="let image of images.hits" [id]="image.id" (click)="image.id=!image.id" [ngClass]="image.id ? 'small' : 'large'"   > 
+    <img [src]="image.webformatURL" >      
+  </div>  
 </div>
 
