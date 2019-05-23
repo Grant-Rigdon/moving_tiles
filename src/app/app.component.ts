@@ -19,7 +19,7 @@ constructor(private data: DataService) { }
 ngOnInit() {
   this.data.getImages().subscribe(data => {
     this.images = data
-    this.selectImage({}, this.images.hits[this.selectedImage])  
+    this.selectImage({}, this.images["hits"][this.selectedImage])  
     console.log(data)
   })
      
