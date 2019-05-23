@@ -1,12 +1,10 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
-  <h1>Moving Tiles</h1>
+  <h1>Moving Images</h1>
   <br>
   <p>click on an image</p>
 </div>
-<div class="container grid-container">
-  <div *ngFor="let image of images.hits" [id]="image.id" (click)="image.id=!image.id" [ngClass]="image.id ? 'small' : 'large'"   > 
+<div class="container flex-container">
+  <div *ngFor="let image of images.hits" class="small" [id]="image.id" [class.large]="image.id==selectedImage" (click)="selectImage($event, image)" > 
     <img [src]="image.webformatURL" >      
   </div>  
 </div>
-

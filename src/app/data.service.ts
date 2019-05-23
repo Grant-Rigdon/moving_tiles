@@ -12,4 +12,5 @@ export class DataService {
     return this.http.get('https://pixabay.com/api/?key=12532498-22795aba748ce0f4e58c508e2&colors=grayscale&orientation=horizontal&image_type=photo&per_page=18&safesearch=true')
   }
   
+  
 }
