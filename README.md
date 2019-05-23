@@ -1,9 +1,9 @@
 # MovingTiles
 
--Angular7
--Flexbox
+* Angular7
+* Flexbox
 
-Try Demo Link: `https://grant-rigdon.github.io/moving_tiles/`
+Try Demo Link: [https://grant-rigdon.github.io/moving_tiles/](https://grant-rigdon.github.io/moving_tiles/)
 
 ## Development server
 
