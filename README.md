@@ -1,6 +1,8 @@
 # MovingTiles
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+*Angular7
+*Flexbox
+Try Demo Link: `https://grant-rigdon.github.io/moving_tiles/`
 
 ## Development server
 

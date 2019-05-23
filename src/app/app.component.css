@@ -14,8 +14,6 @@
 .small {    
     width: 16.66666666666667%;
     height: 25%;
-    background-color: #CCC;
-    
     list-style-type: none;
     cursor: pointer;
     background-size: cover;
@@ -30,8 +28,7 @@ img {
 .large {
     width: 33.33333333333334%;
     height: 50%;
-    opacity: 0.8;
-    background-color: #333399;
+    opacity: 0.8;    
     transition: width 1.2s, height 1.2s;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);   
     
