@@ -8,8 +8,8 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getImages() {
-    return this.http.get('https://pixabay.com/api/?key=12532498-22795aba748ce0f4e58c508e2&colors=grayscale&orientation=horizontal&image_type=photo&per_page=18&safesearch=true')
+  getImages(page) {
+    return this.http.get('https://pixabay.com/api/?key=12532498-22795aba748ce0f4e58c508e2&colors=grayscale&orientation=horizontal&image_type=photo&per_page=9&page='+page+'&safesearch=true')
   }
   
   

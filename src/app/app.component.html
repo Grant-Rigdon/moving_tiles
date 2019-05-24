@@ -5,8 +5,11 @@
 </div>
 
 <div class="container flex-container">
-  <div *ngFor="let image of images['hits']" class="small" [id]="image.id" [class.large]="image.id==selectedImage" (click)="selectImage($event, image)" > 
+  <div *ngFor="let image of images1['hits']" class="small" [id]="image.id" [class.large]="image.id==selectedImage1" (click)="selectImage1($event, image)" > 
     <img [src]="image.webformatURL" >      
-  </div>  
+  </div>
+  <div *ngFor="let image of images2['hits']" class="small" [id]="image.id" [class.large]="image.id==selectedImage2" (click)="selectImage2($event, image)" > 
+      <img [src]="image.webformatURL" >      
+    </div>  
 </div>  
 

@@ -6,7 +6,7 @@
     flex: 1;
     background-color: dodgerblue;
     height: 400px;
-    
+    transition: all 1s;   
     
 }
 
@@ -26,6 +26,7 @@ img {
 }
 
 .large {
+    order: 1;
     width: 33.33333333333334%;
     height: 50%;
     opacity: 0.8;    
